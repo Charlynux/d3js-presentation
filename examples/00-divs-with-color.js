@@ -13,7 +13,5 @@ d3.select(".container")
         .attr("class", "value")
         .style({
           "background-color": x => x.color,
-          "height" : "20px",
-          "margin" : "10px",
           width: x => x.value + "px"
         });

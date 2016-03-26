@@ -6,9 +6,4 @@ d3.select(".container")
       .enter()
         .append("div")
         .attr("class", "value")
-        .style({
-          "background-color": "blue",
-          "height" : "20px",
-          "margin" : "10px",
-          width: x => x + "px"
-        });
+        .style("width", x => x + "px");

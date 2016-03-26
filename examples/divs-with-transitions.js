@@ -5,12 +5,7 @@ function render(someDatas) {
 
     selection.enter()
           .append("div")
-          .attr("class", "value")
-          .style({
-              "background-color": "blue",
-              "height" : "20px",
-              "margin" : "10px"
-            });
+          .attr("class", "value");
 
     doTransition(selection.exit())
               .style("background-color", "red")
