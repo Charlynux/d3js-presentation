@@ -1,0 +1,15 @@
+D3 signifie Data Driven Documents.
+Comme ce nom l'indique, l'objectif de cette librairie est la manipulation de données afin de la visualiser.
+
+Que vous deviez produire du code purement HTML (table, div) ou du SVG, D3 vous aide à transformer vos données .
+
+=====================
+
+Nous vivons aujourd'hui dans un monde de données (Big Data, Open Data,...).
+Une fois ces données récoltées, aggrégées, transformées, il devient nécessaire de les représenter visuellement.
+Lorsqu'il s'agit d'un graphique "à la Excel", on trouve un grand nombre librairies (Plot, Google Charts, ...). Mais quand le besoin est plus particulier (échelles dynamiques/multiples, interactivité avec le graphique, modification en temps réel), il convient de disposer d'une boîte à outils plus complète.
+C'est ici qu'intervient D3.js (pour Data Driven Documents), cette librairie vous apporte un vaste matériel pour convertir vos données en composants graphiques.
+
+Lors de cette présentation, nous commencerons par présenter les avantages de D3 sur les autres librairies, après un exemple simple de manipulation de données, nous parcourirons divers cas d'utilisation pour révéler la puissance de cette librairie.
+
+Bien qu'orientée "technique", cette présentation ne requiert aucune connaissance spécifique en Javascript.
