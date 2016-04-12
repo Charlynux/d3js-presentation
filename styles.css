@@ -5,8 +5,16 @@
   margin: 10px;
 }
 
+/* AXIS PART */
 .axis line,
 .axis path {
   fill: none;
   stroke: #000;
+}
+
+/* BRUSH PART */
+.brush .extent {
+  stroke: #fff;
+  fill-opacity: .125;
+  shape-rendering: crispEdges;
 }
