@@ -19,7 +19,7 @@ var scale = d3.scale.linear()
 
 var brush = d3.svg.brush().x(scale);
 
-brush.on("brushend", () => {
+brush.on("brush", () => {
   var domain = brush.extent();
   render(numbers.filter(x => x >= domain[0] && x <= domain[1]))
 })
@@ -35,8 +35,7 @@ function render(datas) {
         .data(datas);
   values.enter()
           .append("div")
-          .attr("class", "value")
-          .style("width", x => x + "px");
+          .attr("class", "value");
 
   values.style("width", x => x + "px");
 

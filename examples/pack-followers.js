@@ -1,8 +1,6 @@
 d3.json("datas/followers.json", (err, data) => render(data));
 
 function render(data) {
-  var color = d3.scale.category10();
-
   var width = 500;
   var height = 500;
   var svg = d3.select('.container')

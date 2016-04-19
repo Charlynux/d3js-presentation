@@ -35,8 +35,7 @@ var nodes = svg.selectAll("circle")
         .attr({
           r: 10,
           fill: "blue"
-        })
-        .call(force.drag);
+        });
 
 
 function tick() {

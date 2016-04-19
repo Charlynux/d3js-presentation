@@ -1,4 +1,4 @@
-var data = d3.range(200).map(i => ({ id:i }));
+var data = d3.range(200).map(() => ({}));
 
 var width = 500;
 var height = 500;

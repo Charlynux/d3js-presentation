@@ -11,8 +11,8 @@ d3.json("datas/projects.json", (err, json) => {
 
 
 function render(data) {
-  var min = d3.min(data, d => d.start.getTime());
-  var max = d3.max(data, d => d.end.getTime());
+  var min = d3.min(data, d => d.start);
+  var max = d3.max(data, d => d.end);
 
   var xScale = d3.time.scale()
         .domain([min, max])
@@ -29,7 +29,7 @@ function render(data) {
           .data(data).enter()
           .append("rect")
           .attr({
-            x : d => xScale(d.start) + 5,
+            x : d => xScale(d.start),
             y: (d, i) => (i * 25) + 5,
             width: d => xScale(d.end) - xScale(d.start),
             height: 10,
